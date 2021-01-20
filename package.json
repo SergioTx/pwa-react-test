@@ -17,6 +17,7 @@
     "format": "prettier --loglevel warn --write \"**/*.{ts,js,css,md}\""
   },
   "dependencies": {
+    "@emotion/react": "^11.1.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
