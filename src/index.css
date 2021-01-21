@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/Roboto/Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/Roboto/Roboto-Bold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 html,
 body,
 div#app {
@@ -8,4 +22,5 @@ div#app {
 
 * {
   box-sizing: border-box;
+  font-family: Roboto, sans-serif;
 }

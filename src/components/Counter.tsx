@@ -23,7 +23,7 @@ const Counter = (props: Props) => {
       <div
         css={css`
           font-weight: bold;
-          font-size: 36px;
+          font-size: 60px;
         `}
       >
         {countWithZeros}
@@ -31,6 +31,7 @@ const Counter = (props: Props) => {
       <div
         css={css`
           font-size: 24px;
+          margin-top: -12px;
         `}
       >
         {name}
