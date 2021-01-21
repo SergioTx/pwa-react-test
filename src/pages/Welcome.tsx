@@ -11,12 +11,14 @@ interface Props {
 }
 
 const buttonStyles = css`
-  width: 100%;
-  margin: 0;
+  display: block;
+  margin: 0 auto;
   border: 0;
-  padding: 10px;
-  background-color: #154a84;
+  padding: 15px;
+  width: 120px;
+  background-color: #2f6cdf;
   color: white;
+  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
 `;
@@ -78,22 +80,7 @@ const Welcome = (props: Props) => {
         </div>
       </section>
       <section>
-        <button
-          css={css`
-            display: block;
-            margin: 0 auto;
-            border: 0;
-            padding: 15px;
-            width: 120px;
-            background-color: #2f6cdf;
-            color: white;
-            font-weight: bold;
-            border-radius: 5px;
-            cursor: pointer;
-          `}
-        >
-          LOGOUT
-        </button>
+        <button css={buttonStyles}>LOGOUT</button>
       </section>
     </div>
   );
