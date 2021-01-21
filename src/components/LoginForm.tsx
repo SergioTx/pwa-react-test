@@ -41,7 +41,12 @@ const LoginForm = () => {
   };
   return (
     <form onSubmit={onSubmit} css={formStyles}>
-      <img src={'../assets/hide.svg'} height="100px" width="100px" />
+      <img
+        src={'../assets/hide.svg'}
+        alt="lock image"
+        height="100px"
+        width="100px"
+      />
       <input
         type="email"
         name="email"
