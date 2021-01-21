@@ -2,6 +2,10 @@
 import { css, jsx } from '@emotion/react';
 import React, { FormEvent, useState } from 'react';
 
+interface Props {
+  onSubmit: (email: string, password: string) => void;
+}
+
 const formStyles = css`
   height: 100%;
   width: 100%;
@@ -30,14 +34,14 @@ const buttonStyles = css`
   cursor: pointer;
 `;
 
-const LoginForm = () => {
+const LoginForm = (props: Props) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    console.log(email, password);
+    props.onSubmit(email, password);
   };
   return (
     <form onSubmit={onSubmit} css={formStyles}>

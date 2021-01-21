@@ -10,10 +10,14 @@ First install dependencies:
 npm install
 ```
 
-To run in dev mode mode:
+To run in dev mode mode you will need 2 different shells. The first command will launch the frontend, the sencond launches the fake server:
 
 ```sh
 npm start
+```
+
+```sh
+npm run server
 ```
 
 Then go to http://localhost:8080

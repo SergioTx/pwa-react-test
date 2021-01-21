@@ -8,6 +8,7 @@ import getTimeFromDates from '../utils/get-time-from-dates';
 
 interface Props {
   loginTime: number;
+  onLogout: () => void;
 }
 
 const buttonStyles = css`
@@ -80,7 +81,9 @@ const Welcome = (props: Props) => {
         </div>
       </section>
       <section>
-        <button css={buttonStyles}>LOGOUT</button>
+        <button css={buttonStyles} onClick={props.onLogout}>
+          LOGOUT
+        </button>
       </section>
     </div>
   );

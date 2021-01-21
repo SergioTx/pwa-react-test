@@ -4,7 +4,11 @@ import React from 'react';
 
 import LoginForm from '../components/LoginForm';
 
-const Login = () => {
+interface Props {
+  onSubmit: (email: string, password: string) => void;
+}
+
+const Login = (props: Props) => {
   return (
     <div
       css={css`
@@ -25,7 +29,7 @@ const Login = () => {
           min-width: 300px;
         `}
       >
-        <LoginForm />
+        <LoginForm onSubmit={props.onSubmit} />
       </div>
     </div>
   );
