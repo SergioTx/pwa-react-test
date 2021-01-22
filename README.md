@@ -60,4 +60,6 @@ The login and router parts are very simple because I considered that this projec
 
 Also, the data model was too simple to use the context api or redux. I decided to store the info in the parent components and the sessionStorage.
 
+Besides, the URL of the "backend" is hardcoded. It should depend on a external baseUrl that changes between environments.
+
 The project was originally created from scratch with snowpack, but I finally changed to create-react-app to add the service worker because of the support it provides and the little time to do it.
