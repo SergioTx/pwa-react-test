@@ -44,6 +44,7 @@ npm test
 
 If this proyect should grow in the future, this is the roadmap of the features I would add:
 
+- deployment
 - a11y
 - i18n
 - e2e test
