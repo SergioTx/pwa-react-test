@@ -24,7 +24,6 @@ const App = (): JSX.Element => {
 
   const onLogout = () => {
     setTime(0);
-    console.log(time);
   };
 
   if (time === 0) return <Login onSubmit={onLogin} />;
