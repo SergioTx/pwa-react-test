@@ -1,6 +1,8 @@
 # pwa-react-test
 
-This is a test PWA made with ReactJs. It comes with a ServiceWorker that caches all the static files.
+This is a test PWA made with ReactJs. It has a login page that lets you enter user/password and a Welcome page that displays the time passed since your last login.
+
+It comes with a ServiceWorker that caches all the static files.
 
 The server is mocked with a json-server. It will always return OK to all the calls to /login. To start the server see the "how to run locally section".
 
