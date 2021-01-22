@@ -1,8 +1,15 @@
+interface Times {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
 const MINUTE_IN_SECONDS = 60;
 const HOUR_IN_SECONDS = MINUTE_IN_SECONDS * 60;
 const DAY_IN_SECONDS = HOUR_IN_SECONDS * 24;
 
-const getTimeFromDates = (dateStart: number, dateEnd: number) => {
+const getTimeFromDates = (dateStart: number, dateEnd: number): Times => {
   let seconds = Math.round((dateStart - dateEnd) / 1000);
   const days = Math.trunc(seconds / DAY_IN_SECONDS);
   seconds -= days * DAY_IN_SECONDS;

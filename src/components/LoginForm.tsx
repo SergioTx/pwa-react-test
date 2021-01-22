@@ -1,6 +1,9 @@
-/** @jsx jsx */
-import { css, jsx } from '@emotion/react';
+/* @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React, { FormEvent, useState } from 'react';
+
+import hideSvg from '../assets/hide.svg';
 
 interface Props {
   onSubmit: (email: string, password: string) => void;
@@ -34,7 +37,7 @@ const buttonStyles = css`
   cursor: pointer;
 `;
 
-const LoginForm = (props: Props) => {
+const LoginForm = (props: Props): EmotionJSX.Element => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -43,14 +46,10 @@ const LoginForm = (props: Props) => {
 
     props.onSubmit(email, password);
   };
+
   return (
     <form onSubmit={onSubmit} css={formStyles}>
-      <img
-        src={'../assets/hide.svg'}
-        alt="lock image"
-        height="100px"
-        width="100px"
-      />
+      <img src={hideSvg} alt="lock image" height="100px" width="100px" />
       <input
         type="email"
         name="email"

@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { css, jsx } from '@emotion/react';
+/* @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React from 'react';
 
 interface Props {
@@ -7,7 +8,7 @@ interface Props {
   name: string;
 }
 
-const Counter = (props: Props) => {
+const Counter = (props: Props): EmotionJSX.Element => {
   const { count, name } = props;
   const countWithZeros = count.toString().padStart(2, '0');
 

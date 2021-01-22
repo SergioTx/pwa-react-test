@@ -5,7 +5,7 @@ import Welcome from './pages/Welcome';
 
 import { login } from './services/login';
 
-const App = () => {
+const App = (): JSX.Element => {
   const [time, setTime] = useState(0);
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const App = () => {
     }
   }, []);
 
-  const onLogin = async (user: string, password: string) => {
+  const onLogin = async (user: string, password: string): Promise<void> => {
     const loginResponse = await login(user, password);
 
     sessionStorage.setItem('loginDate', loginResponse.loginDate.toString());

@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { css, jsx } from '@emotion/react';
+/* @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React from 'react';
 
 import LoginForm from '../components/LoginForm';
@@ -8,7 +9,7 @@ interface Props {
   onSubmit: (email: string, password: string) => void;
 }
 
-const Login = (props: Props) => {
+const Login = (props: Props): EmotionJSX.Element => {
   return (
     <div
       css={css`

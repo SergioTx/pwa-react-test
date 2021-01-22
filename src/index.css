@@ -1,20 +1,21 @@
+/* font faces must be placed inside SRC to go through the pipeline */
 @font-face {
   font-family: 'Roboto';
-  src: url('./assets/Roboto/Roboto-Regular.ttf');
+  src: url('./assets/fonts/Roboto/Roboto-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('./assets/Roboto/Roboto-Bold.ttf');
+  src: url('./assets/fonts/Roboto/Roboto-Bold.ttf');
   font-weight: bold;
   font-style: normal;
 }
 
 html,
 body,
-div#app {
+div#root {
   height: 100%;
   margin: 0;
   padding: 0;

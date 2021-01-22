@@ -1,5 +1,6 @@
-/** @jsx jsx */
-import { css, jsx } from '@emotion/react';
+/* @jsxImportSource @emotion/react */
+import { css } from '@emotion/react';
+import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import React, { useState, useEffect } from 'react';
 
 import Counter from '../components/Counter';
@@ -24,7 +25,7 @@ const buttonStyles = css`
   cursor: pointer;
 `;
 
-const Welcome = (props: Props) => {
+const Welcome = (props: Props): EmotionJSX.Element => {
   const startTime = getTimeFromDates(Date.now(), props.loginTime);
   const [time, setTime] = useState(startTime);
 

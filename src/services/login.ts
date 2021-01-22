@@ -9,7 +9,7 @@ export const login = async (
   password: string
 ): Promise<LoginInfo> => {
   const login = await ky
-    .post('http://localhost:3000/login', { json: { user, password } })
+    .post('http://localhost:8080/login', { json: { user, password } })
     .json<LoginInfo>();
   return login;
 };
